@@ -1,0 +1,87 @@
+/* google fonts-- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+/* --first section-- */
+.banner{
+    background-color: rgb(45, 45, 191);
+    width: 1350px;
+    
+}
+.top-label{
+    display: flex;
+    padding:40px;
+    
+}
+.top-label img{
+    width: 556px;
+    height: 438px;
+    padding-top:67px;
+     padding-left:100px ;  
+}
+.content-title{
+font-style: normal;
+font-weight:700;
+font-size: 64px;
+
+color: #FFFF;
+}
+.link-button{
+    text-decoration: none;
+    color: white;
+    background: #E02C6D;
+     padding: 10px 24px;
+}
+/* ----hover---- */
+.link-button:hover {
+    font-size: 30px;
+    color: rgb(186, 18, 18);
+    background:rgb(179, 107, 179);
+     padding: 30px 40px;
+}
+/* -----article design part--- */
+.container{
+    background-color: #FFFFFF;
+    width: 800px;
+    padding:50px;
+    margin: 20px;
+}
+.players-album{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    align-items: center; 
+}
+.photo-frame{
+    height: 474px;
+    width: 330px;
+    padding: 15px;
+    border: 2px solid rgb(228, 214, 214);
+     border-radius: 10px;
+     margin: 10px;
+     box-shadow: 5px 10px 18px #888888;
+}
+.photo img{
+    width: 100%;
+}
+/* --article part end  */
+/* --- another section-- */
+
+.goal{
+    display: flex;
+    padding: 20px;
+}
+.goal img{
+    width: 567px;
+    height: 427px;
+  
+}
+.match-detail h3{
+    color: black;
+    width: 466px;
+    
+}
