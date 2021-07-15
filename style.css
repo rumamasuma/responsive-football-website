@@ -9,8 +9,7 @@ body {
 /* --first section-- */
 .banner{
     background-color: rgb(45, 45, 191);
-    width: 1330px;
-    
+    width: 1330px;    
 }
 .top-label{
     display: flex;
@@ -52,7 +51,6 @@ color: #FFFF;
 .players-album{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    
     align-items: center; 
 }
 .photo-frame{
@@ -169,7 +167,19 @@ overflow: hidden;
     margin: 0 10px;
     font-size: 30px;
 }
-.socials a:hover i{
+.socials a:hover i {
     color: rgb(27, 157, 157);
     font-size: 40px;
-/* ---footer section end-- */
+}
+@media  only screen and (max-width:688px) {
+    .banner{
+        width: 100%;
+    }
+    .banner-part, .players-album {
+        grid-template-columns: repeat(1,1fr);
+        background-color: rgb(126, 202, 202);
+    }
+    .photo, .news-feed,.top-label, .goal, .videos-update , .socials{
+        flex-direction: column;
+    }
+}
