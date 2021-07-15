@@ -9,7 +9,7 @@ body {
 /* --first section-- */
 .banner{
     background-color: rgb(45, 45, 191);
-    width: 1350px;
+    width: 1330px;
     
 }
 .top-label{
@@ -27,7 +27,6 @@ body {
 font-style: normal;
 font-weight:700;
 font-size: 64px;
-
 color: #FFFF;
 }
 .link-button{
@@ -41,7 +40,7 @@ color: #FFFF;
     font-size: 30px;
     color: rgb(186, 18, 18);
     background:rgb(179, 107, 179);
-     padding: 30px 40px;
+     padding: 30px 30px;
 }
 /* -----article design part--- */
 .container{
@@ -73,15 +72,75 @@ color: #FFFF;
 
 .goal{
     display: flex;
-    padding: 20px;
+    padding: 20px 40px;
 }
 .goal img{
     width: 567px;
     height: 427px;
   
 }
-.match-detail h3{
-    color: black;
-    width: 466px;
-    
+.match-detail{
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 20px 40px;
 }
+.match-detail h3{
+    color:blue;
+    width: 466px;
+    font-size: 40px;
+    text-align: center; 
+}
+/* --another section end--  */
+/* --videos section start-- */
+.videos-update {
+    display:flex;
+    flex-direction: row;
+    padding: 20px 40px;
+    justify-content: space-between;
+}
+.video {
+    padding-left: 40px;
+}
+/* ----news section start--- */
+.news-feed{
+    display:flex;
+    padding: 10px;
+}
+.news-section h2{
+    text-align: center;
+    color: blue;
+}
+.news-item{
+    width: 300px; 
+border: 2px solid gray;
+margin: 10px;
+border-radius: 5px;
+position: relative;
+overflow: hidden;
+}
+.news img{
+    width: 100%;
+    border-radius:5px;
+}
+.news-detail {
+    padding: 10px;
+}
+.news-detail p{
+    display: none;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+}
+/* ---use hover --- */
+.news-item:hover .news-detail p{
+    display: block;
+    background-color: rgba(238, 226, 194, 0.679);
+}
+/* --news- section end-  */
+/* ----transform & transition ---- */
+.news-item:hover .news{
+    transform: scale(1.5);
+    transition: transform 3s ease-in-out;
+}
+/* ----footer section start--- */
+
